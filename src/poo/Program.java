@@ -32,9 +32,12 @@ public class Program {
 		mt3.nota = 2;
 		mt3.nroDeCreditos = 2;
 		mt3.valorPorRecuperacion = 12000;
-		a1.m1 = mt1;
-		a1.m2 = mt2;
-		a1.m3 = mt3;
+		a1.materias[0] = mt1;
+		a1.cantidadMaterias++;
+		a1.materias[1] = mt2;
+		a1.cantidadMaterias++;
+		a1.materias[2] = mt3;
+		a1.cantidadMaterias++;
 		
 		float promedioAlumno1 = a1.calcularPromedio();
 		System.out.println("Promedio"+" "+a1.nombre + ":" + promedioAlumno1);
@@ -63,9 +66,12 @@ public class Program {
 		mt6.nota = 4;
 		mt6.nroDeCreditos = 3;
 		mt6.valorPorRecuperacion = 18000;
-		a2.m1 = mt4;
-		a2.m2 = mt5;
-		a2.m3 = mt6;
+		a2.materias[0] = mt4;
+		a2.cantidadMaterias++;
+		a2.materias[1] = mt5;
+		a2.cantidadMaterias++;
+		a2.materias[2] = mt6;
+		a2.cantidadMaterias++;
 		
 		float promedioAlumno2 = a2.calcularPromedio();
 		System.out.println("Promedio"+" "+a2.nombre + ":" + promedioAlumno2);
@@ -96,9 +102,12 @@ public class Program {
 		mt9.nota = 3;
 		mt9.nroDeCreditos = 3;
 		mt9.valorPorRecuperacion = 18000;
-		a3.m1 = mt7;
-		a3.m2 = mt8;
-		a3.m3 = mt9;
+		a3.materias[0] = mt7;
+		a3.cantidadMaterias++;
+		a3.materias[1] = mt8;
+		a3.cantidadMaterias++;
+		a3.materias[2] = mt9;
+		a3.cantidadMaterias++;
 		
 		float promedioAlumno3 = a3.calcularPromedio();
 		System.out.println("Promedio"+" "+a3.nombre + ":" + promedioAlumno3);
@@ -128,9 +137,12 @@ public class Program {
 		mt12.nota = 3;
 		mt12.nroDeCreditos = 3;
 		mt12.valorPorRecuperacion = 18000;
-		a4.m1 = mt10;
-		a4.m2 = mt11;
-		a4.m3 = mt12;
+		a4.materias[0]= mt10;
+		a4.cantidadMaterias++;
+		a4.materias[1] = mt11;
+		a4.cantidadMaterias++;
+		a4.materias[2]= mt12;
+		a4.cantidadMaterias++;
 		
 		float promedioAlumno4 = a4.calcularPromedio();
 		System.out.println("Promedio"+" "+a4.nombre + ":" + promedioAlumno4);
@@ -159,9 +171,12 @@ public class Program {
 		mt15.nota = 4;
 		mt15.nroDeCreditos = 2;
 		mt15.valorPorRecuperacion = 12000;
-		a5.m1 = mt13;
-		a5.m2 = mt14;
-		a5.m3 = mt15;
+		a5.materias[0] = mt13;
+		a5.cantidadMaterias++;
+		a5.materias[1] = mt14;
+		a5.cantidadMaterias++;
+		a5.materias[2] = mt15;
+		a5.cantidadMaterias++;
 		
 		float promedioAlumno5 = a5.calcularPromedio();
 		System.out.println("Promedio"+" "+a5.nombre + ":" + promedioAlumno5);
