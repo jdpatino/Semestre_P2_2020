@@ -2,8 +2,9 @@ package poo;
 
 public class Alumno {
 	String nombre;
-	
-	Materia[] materias = new Materia[6];
+	int MAX_CREDITOS=12;
+	static final int MAX_MATERIAS= 15;
+	Materia[] materias = new Materia[Alumno.MAX_MATERIAS];
 	int cantidadMaterias = 0;
 	
 	float calcularPromedio() {
@@ -49,5 +50,18 @@ public class Alumno {
 			}
 			return materiasOk;
 	}
+	
+	 public void validacionInscripcionMaterias(Materia a) throws Exception {
+		 for (int i = 0; i<cantidadMaterias; i++) {
+			 if (cantidadMaterias==MAX_MATERIAS) {
+					throw new Exception ("El estudiante ya tiene inscritas el maximo de materias permitidas");
+				}
+			 if(MAX_CREDITOS<materias[i].nroDeCreditos) {
+				 throw new Exception("Has excedido el Numero maximo de creditos");
+			 }
+		 }
+		 materias[cantidadMaterias]= a;
+			cantidadMaterias++;
+	 }
 	
 }

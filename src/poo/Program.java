@@ -12,7 +12,7 @@ package poo;
  */
 public class Program {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		Alumno a1= new Alumno();
 		a1.nombre= "Juan";
@@ -23,7 +23,7 @@ public class Program {
 		mt1.nroDeCreditos = 2;
 		mt1.valorPorRecuperacion = 12000;
 		Materia mt2 = new Materia();
-		mt2.nombre = "Circuitos";
+		mt2.nombre = "Introduccion";
 		mt2.nota = 4;
 		mt2.nroDeCreditos = 3;
 		mt2.valorPorRecuperacion = 18000;
@@ -32,12 +32,9 @@ public class Program {
 		mt3.nota = 2;
 		mt3.nroDeCreditos = 2;
 		mt3.valorPorRecuperacion = 12000;
-		a1.materias[0] = mt1;
-		a1.cantidadMaterias++;
-		a1.materias[1] = mt2;
-		a1.cantidadMaterias++;
-		a1.materias[2] = mt3;
-		a1.cantidadMaterias++;
+		a1.validacionInscripcionMaterias(mt1);
+		a1.validacionInscripcionMaterias(mt2);
+		a1.validacionInscripcionMaterias(mt3);
 		
 		float promedioAlumno1 = a1.calcularPromedio();
 		System.out.println("Promedio"+" "+a1.nombre + ":" + promedioAlumno1);
@@ -66,12 +63,9 @@ public class Program {
 		mt6.nota = 4;
 		mt6.nroDeCreditos = 3;
 		mt6.valorPorRecuperacion = 18000;
-		a2.materias[0] = mt4;
-		a2.cantidadMaterias++;
-		a2.materias[1] = mt5;
-		a2.cantidadMaterias++;
-		a2.materias[2] = mt6;
-		a2.cantidadMaterias++;
+		a2.validacionInscripcionMaterias(mt4);
+		a2.validacionInscripcionMaterias(mt5);
+		a2.validacionInscripcionMaterias(mt6);
 		
 		float promedioAlumno2 = a2.calcularPromedio();
 		System.out.println("Promedio"+" "+a2.nombre + ":" + promedioAlumno2);
@@ -102,12 +96,9 @@ public class Program {
 		mt9.nota = 3;
 		mt9.nroDeCreditos = 3;
 		mt9.valorPorRecuperacion = 18000;
-		a3.materias[0] = mt7;
-		a3.cantidadMaterias++;
-		a3.materias[1] = mt8;
-		a3.cantidadMaterias++;
-		a3.materias[2] = mt9;
-		a3.cantidadMaterias++;
+		a3.validacionInscripcionMaterias(mt7);
+		a3.validacionInscripcionMaterias(mt8);
+		a3.validacionInscripcionMaterias(mt9);
 		
 		float promedioAlumno3 = a3.calcularPromedio();
 		System.out.println("Promedio"+" "+a3.nombre + ":" + promedioAlumno3);
@@ -123,26 +114,23 @@ public class Program {
 		a4.nombre= "Camilo";
 		
 		Materia mt10 = new Materia();
-		mt10.nombre = "Calculo";
+		mt10.nombre = "Soporte de Redes";
 		mt10.nota = 3;
 		mt10.nroDeCreditos = 3;
 		mt10.valorPorRecuperacion = 18000;
 		Materia mt11 = new Materia();
-		mt11.nombre = "Circuitos";
+		mt11.nombre = "Telecomunicaciones";
 		mt11.nota = 3;
 		mt11.nroDeCreditos = 3;
 		mt11.valorPorRecuperacion = 18000;
 		Materia mt12 = new Materia();
-		mt12.nombre = "Programacion";
+		mt12.nombre = "Big Data";
 		mt12.nota = 3;
 		mt12.nroDeCreditos = 3;
 		mt12.valorPorRecuperacion = 18000;
-		a4.materias[0]= mt10;
-		a4.cantidadMaterias++;
-		a4.materias[1] = mt11;
-		a4.cantidadMaterias++;
-		a4.materias[2]= mt12;
-		a4.cantidadMaterias++;
+		a4.validacionInscripcionMaterias(mt10);
+		a4.validacionInscripcionMaterias(mt11);
+		a4.validacionInscripcionMaterias(mt12);
 		
 		float promedioAlumno4 = a4.calcularPromedio();
 		System.out.println("Promedio"+" "+a4.nombre + ":" + promedioAlumno4);
@@ -171,12 +159,9 @@ public class Program {
 		mt15.nota = 4;
 		mt15.nroDeCreditos = 2;
 		mt15.valorPorRecuperacion = 12000;
-		a5.materias[0] = mt13;
-		a5.cantidadMaterias++;
-		a5.materias[1] = mt14;
-		a5.cantidadMaterias++;
-		a5.materias[2] = mt15;
-		a5.cantidadMaterias++;
+		a5.validacionInscripcionMaterias(mt13);
+		a5.validacionInscripcionMaterias(mt14);
+		a5.validacionInscripcionMaterias(mt15);
 		
 		float promedioAlumno5 = a5.calcularPromedio();
 		System.out.println("Promedio"+" "+a5.nombre + ":" + promedioAlumno5);
