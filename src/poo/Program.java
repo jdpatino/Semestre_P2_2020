@@ -28,13 +28,20 @@ public class Program {
 		mt2.nroDeCreditos = 3;
 		mt2.valorPorRecuperacion = 18000;
 		Materia mt3 = new Materia();
-		mt3.nombre = "Fisica";
+		mt3.nombre = "+p";
 		mt3.nota = 2;
 		mt3.nroDeCreditos = 2;
 		mt3.valorPorRecuperacion = 12000;
+		Materia mt16 = new Materia();
+		mt16.nombre = "Materia Prueba";
+		mt16.nota = 2;
+		mt16.nroDeCreditos = 2;
+		mt16.valorPorRecuperacion = 12000;
 		a1.validacionInscripcionMaterias(mt1);
 		a1.validacionInscripcionMaterias(mt2);
 		a1.validacionInscripcionMaterias(mt3);
+		a1.validacionInscripcionMaterias(mt16);
+		
 		
 		float promedioAlumno1 = a1.calcularPromedio();
 		System.out.println("Promedio"+" "+a1.nombre + ":" + promedioAlumno1);
