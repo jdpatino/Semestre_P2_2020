@@ -7,7 +7,7 @@ public class Alumno {
 	int MAX_CREDITOS=15;
     int MAX_MATERIAS= 3;
 	Materia[] materias = new Materia[MAX_MATERIAS];
-	Materia[] materiasTemp = new Materia[MAX_MATERIAS*2];
+	Materia[] materiasTemp = new Materia[MAX_MATERIAS];
 	int cantidadMaterias = 0;
 	String nombreVal=" ";
 	
@@ -68,7 +68,7 @@ public class Alumno {
 	 public void validacionInscripcionMaterias(Materia a) throws Exception {
 		 for (int i = 0; i<cantidadMaterias; i++) {
 			 if (cantidadMaterias==MAX_MATERIAS) {
-				 MAX_MATERIAS= materiasTemp.length;
+				 MAX_MATERIAS=MAX_MATERIAS*2;
 				 llenarArregloTemp();
 				 Materia[] materias = new Materia[materiasTemp.length];
 				 llenarArregloDefinitivo();
