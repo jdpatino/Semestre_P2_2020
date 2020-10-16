@@ -72,9 +72,9 @@ public class ListInt {
 		NodoInt tmp = head;
 		if((tmp.data % 2)==0) {
 			cont++;
-			}else {
+			} 
 		tmp= tmp.next;
-	}
+	
 		}
 		return cont;
 	}
@@ -117,5 +117,48 @@ public class ListInt {
 				
 			}
 		}
+	}
+	public float promedioLista(){
+		float sum=0;
+		float cont=0;
+		float promedio=0;
+		if (head== null) {
+			return promedio;
+		}
+		NodoInt tmp = head;
+		while(tmp!= null) {
+			sum= sum + tmp.data;
+			cont++;
+			tmp= tmp.next;
+		}
+		promedio=(sum/cont);
+		return promedio;
+	}
+	public int diferenciaLista() {
+		int sustra=0;
+		int minu=0;
+		int resta=0;
+		if (head== null) {
+			return resta;
+		}else {
+			sustra=head.data;
+		}
+		NodoInt tmp = head;
+		while(tmp!= null) {
+			minu=tmp.data;
+			tmp= tmp.next;
+		}
+		resta=(sustra-minu);
+		return resta;
+	}
+	public void agregarAlFinal(int value) {
+		if (head== null) {
+			head.data=value;
+		}
+		NodoInt tmp = head;
+		while(tmp.next== null) {
+			tmp=tmp.next;
+		}
+		tmp.data=value;
 	}
 	}
